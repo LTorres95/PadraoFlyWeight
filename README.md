@@ -1,15 +1,1 @@
-# Padrão Flyweight
 
-Exemplo em Java 17 com Maven: um editor de texto compartilha objetos `Caractere` para cada símbolo usado no documento.
-
-`Caractere` guarda o símbolo compartilhável. `CaractereFactory` reutiliza uma instância por símbolo. `CaracterDocumento` mantém posição e formatação de cada ocorrência, enquanto `Documento` reúne os caracteres.
-
-O diagrama de classes está em `diagrama-classes.png`.
-
-## Executar
-
-```bash
-mvn test
-mvn package
-java -cp target/classes flyweight.ExemploFlyweight
-```
